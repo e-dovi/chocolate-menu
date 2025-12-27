@@ -1,5 +1,5 @@
 //import {  /*createContext, useContext*/ } from "react";
-import { Image, Text, View, StyleSheet, Button, Pressable } from "react-native";
+import { Image, Text, View, StyleSheet, Pressable } from "react-native";
 import {selectCart, /*clearCart,*/ addToCart/*, increaseQty, decreaseQty*/} from '../reducers/cartSlice.js';
 import {useDispatch, useSelector} from "react-redux";
 
@@ -45,6 +45,12 @@ const Item = (props) => {
      backgroundColor: '#fffffcba'
       //flexWrap:'nowrap'
     },
+    image: {
+      width: '30%',
+      aspectRatio: 1,
+      borderRadius: 10,
+      resizeMode: 'cover',
+    },
     wrapperCustom: {
       borderRadius: 8,
       padding: 0,
@@ -64,7 +70,6 @@ const Item = (props) => {
       fontFamily:"'Times New Roman', Times, serif"
     },
     txt_cart:{
-      
       fontSize:20
     }
   })

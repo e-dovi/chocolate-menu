@@ -1,28 +1,22 @@
 import {
   Pressable,
-  Button,
   StyleSheet,
   Text,
   View,
   ScrollView,
   Switch,
-  SafeAreaView,
-  TextInput
-} from 'react-native';
+  TextInput } from 'react-native';
 import {
   selectCart,
   clearCart,
-  /*addToCart,*/ increaseQty,
+  increaseQty,
   decreaseQty,
-  removeItem,
-} from '../reducers/cartSlice.js';
+  removeItem } from '../reducers/cartSlice.js';
 import { useDispatch, useSelector } from 'react-redux';
-import { createContext, useContext, useState } from 'react';
-//import addToDb from '../helpers/addOrder.js';
-//import {AuthContext} from '..App.js/';
+import { useState } from 'react';
+
 
 function CartScreen() {
-  //const [ttl, setTtl] = useState(0);
   let ttl = 0;
   const dispatch = useDispatch();
   const select = useSelector(selectCart);
@@ -48,25 +42,7 @@ function CartScreen() {
       items: select,
     };
     console.log(obj);
-    //alert('Placing your order...');
-   /* addToDb({ order: obj })
-      .then((res) => {
-        console.log(res);
-
-        if (res && res.ok) {
-          alert('Order placed successfully.');
-          //localStorage.removeItem('cart')
-          dispatch(clearCart());
-          //setNum((prev) => {return prev + 1})
-        } else {
-          alert('Unable to place order please try again later.');
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });*/
       alert('Order placed successfully.');
-          //localStorage.removeItem('cart')
           dispatch(clearCart());
   };
 
@@ -126,7 +102,6 @@ function CartScreen() {
                       &#x1F5D1;
                     </Text>
                   </Pressable>
-                  {/* <Pressable onPress={() => {dispatch(removeItem(m.name))}}><Text style={{fontSize:19, paddingBottom: 10 }}>Remove <Text style={{fontSize:40, }}>&#x1F5D1;</Text></Text></Pressable> */}
                 </View>
               );
             }

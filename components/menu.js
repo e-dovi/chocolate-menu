@@ -1,5 +1,5 @@
 import Item from './item.js';
-import { Pressable, Button, StyleSheet, Text, View, ScrollView, SafeAreaView, FlatList } from 'react-native';
+import { StyleSheet, SafeAreaView, FlatList } from 'react-native';
 
 const img = {
     sundae: require('../images/sundae.jpg'),

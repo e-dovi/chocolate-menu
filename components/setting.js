@@ -1,4 +1,4 @@
-import { Pressable, Button, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+import { Pressable, StyleSheet, Text, View} from 'react-native';
 import {AuthContext} from '../App.js';
 import {useContext} from 'react';
 
