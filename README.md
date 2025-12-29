@@ -4,6 +4,8 @@ A responsive React Native Web application that displays a list of chocolate‑th
 
 This project is designed to run on **web**, with layouts optimized for smaller screens and flexible image rendering.
 
+👉 Live Demo: https://chocolate-made.netlify.app
+
 ---
 
 ## 📦 Features
